@@ -3,7 +3,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 0.7rem 2rem 0.7rem 2.5rem;
-  background: #232323;
+  background: #00000000;
   font-family: 'Inter', sans-serif;
   font-weight: 400;
 }
@@ -31,7 +31,7 @@
 
 .navbar-links a {
   text-decoration: none;
-  color: #fff;
+  color: #000;
   font-size: 1.1rem;
   font-family: inherit;
   padding: 4px 14px;
@@ -42,13 +42,13 @@
 .navbar-links .active a,
 .navbar-links li a:hover {
   background: #fff;
-  color: #242424;
+  color: #ffb116;
 }
 
 .navbar-lang-dropdown {
   position: relative;
   cursor: pointer;
-  color: #fff;
+  color: #000;
   outline: none;
 }
 

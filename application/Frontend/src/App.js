@@ -2,6 +2,10 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './Navbar';
 import proPic from './assets/images/proPic.jpg';
+import facebookIcon from './assets/images/facebookIcon.svg';
+import instagramIcon from './assets/images/instagramIcon.svg';
+import linkedInIcon from './assets/images/linkedInIcon.svg';
+import gitHubIcon from './assets/images/gitHubIcon.svg';
 import './App.css';
 
 // Placeholder page components
@@ -10,14 +14,29 @@ const Experience = () => <div style={{ padding: '3rem' }}><h2>Experience / Skill
 const Photography = () => <div style={{ padding: '3rem' }}><h2>Photography</h2></div>;
 const Blog = () => <div style={{ padding: '3rem' }}><h2>Blog</h2></div>;
 
-// Home page with proPic in a circle on the right
+// Home page with proPic and user info+icons
 const Home = () => (
-  <div style={{ display: 'flex', justifyContent: 'flex-end', padding: '4rem 4rem 4rem 1.5rem', minHeight: '65vh', alignItems: 'center', background: '#fff'}}>
-    <img
-      src={proPic}
-      alt="Profile"
-      style={{ height: 240, width: 240, borderRadius: '50%', objectFit: 'cover', boxShadow: '0 2px 17px 0 rgba(0,0,0,0.10)'}}
-    />
+  <div className="home-container">
+    <div className="home-bio">
+      <h1 className="profile-title">Tenzing Yuna/Dani</h1>
+      <div className="profile-desc">Software Engineer | AI Researcher | UI Designer</div>
+      <div className="profile-location"><span className="profile-location-icon">⚲ </span> San Francisco, CA</div>
+      <div className="home-socials">
+        <a className="social-link facebook" href="https://facebook.com/your-profile" target="_blank" rel="noopener noreferrer">
+          <img src={facebookIcon} alt="Facebook" />
+        </a>
+        <a className="social-link instagram" href="https://instagram.com/your-profile" target="_blank" rel="noopener noreferrer">
+          <img src={instagramIcon} alt="Instagram" />
+        </a>
+        <a className="social-link linkedin" href="https://linkedin.com/in/your-profile" target="_blank" rel="noopener noreferrer">
+          <img src={linkedInIcon} alt="LinkedIn" />
+        </a>
+        <a className="social-link github" href="https://github.com/your-profile" target="_blank" rel="noopener noreferrer">
+          <img src={gitHubIcon} alt="GitHub" />
+        </a>
+      </div>
+    </div>
+    <img className="home-profile-pic" src={proPic} alt="Profile" />
   </div>
 );
 

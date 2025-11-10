@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
-// Import the logo SVG
-import logo from './assets/images/由奈m3Logo.svg';
+import YunaM3LogoAnimated from './assets/images/由奈m3LogoAnimated';
 import './Navbar.css';
 
 const Navbar = () => {
@@ -9,7 +8,7 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <Link to="/" className="navbar-logo">
-        <img src={logo} alt="Logo" className="navbar-logo-img" />
+        <YunaM3LogoAnimated className="navbar-logo-img" />
       </Link>
       <ul className="navbar-links">
         <li className={location.pathname === '/about' ? 'active' : ''}><Link to="/about">about</Link></li>

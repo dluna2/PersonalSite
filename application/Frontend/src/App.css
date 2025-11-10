@@ -36,3 +36,100 @@
     transform: rotate(360deg);
   }
 }
+
+/* --- Home page --- */
+.home-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 4rem 4rem 4rem 1.5rem;
+  min-height: 65vh;
+  background: #fff;
+}
+.home-bio {
+  margin-right: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.profile-title {
+  font-weight: 500;
+  font-size: 2rem;
+  margin-bottom: 1.2rem;
+  letter-spacing: -0.5px;
+}
+.profile-desc {
+  font-size: 1.1rem;
+  margin-bottom: 0.6rem;
+  color: #232323;
+  font-weight: 400;
+}
+.profile-location {
+  font-size: 1rem;
+  margin-bottom: 1.1rem;
+  color: #232323;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  gap: 0.4em;
+}
+.profile-location-icon {
+  font-size: 1.22em;
+  position: relative;
+  top: 1px;
+}
+.home-socials {
+  display: flex;
+  gap: 1.4rem;
+  margin-top: 2rem;
+}
+.social-link img {
+  width: 2em;
+  height: 2em;
+  transition: filter 0.2s, box-shadow 0.17s;
+  border-radius: 7px;
+  background: transparent;
+  box-shadow: none;
+}
+.social-link:hover img {
+  filter: brightness(0.9) drop-shadow(0 0 0.6em currentColor);
+  box-shadow: 0 0 0.1em 0.08em currentColor;
+}
+.social-link.facebook:hover img {
+  color: #1877f3;
+  filter: invert(29%) sepia(81%) saturate(2148%) hue-rotate(193deg) brightness(95%) contrast(104%) !important;
+}
+.social-link.linkedin:hover img {
+  color: #1877f3;
+  filter: invert(29%) sepia(81%) saturate(2148%) hue-rotate(193deg) brightness(95%) contrast(104%) !important;
+}
+.social-link.instagram:hover img {
+  color: #ee2b7a;
+  filter: invert(32%) sepia(86%) saturate(1117%) hue-rotate(300deg) brightness(85%) contrast(106%) !important;
+}
+.social-link.github:hover img {
+  color: #a259e6;
+  filter: invert(32%) sepia(77%) saturate(3785%) hue-rotate(253deg) brightness(93%) contrast(97%) !important;
+}
+.home-profile-pic {
+  height: 240px;
+  width: 240px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 2px 17px 0 rgba(0,0,0,0.10);
+}
+@media (max-width: 900px) {
+  .home-container {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2.5rem 1rem;
+  }
+  .home-bio {
+    margin-right: 0;
+    margin-bottom: 2rem;
+  }
+  .home-profile-pic {
+    height: 180px;
+    width: 180px;
+  }
+}
