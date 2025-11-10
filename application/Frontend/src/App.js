@@ -25,13 +25,13 @@ const Home = () => (
         <a className="social-link facebook" href="https://facebook.com/your-profile" target="_blank" rel="noopener noreferrer">
           <img src={facebookIcon} alt="Facebook" />
         </a>
-        <a className="social-link instagram" href="https://instagram.com/your-profile" target="_blank" rel="noopener noreferrer">
+        <a className="social-link instagram" href="https://www.instagram.com/tenzing.2002/" target="_blank" rel="noopener noreferrer">
           <img src={instagramIcon} alt="Instagram" />
         </a>
-        <a className="social-link linkedin" href="https://linkedin.com/in/your-profile" target="_blank" rel="noopener noreferrer">
+        <a className="social-link linkedin" href="https://www.linkedin.com/in/yuna-tenzing-a69bb2245/" target="_blank" rel="noopener noreferrer">
           <img src={linkedInIcon} alt="LinkedIn" />
         </a>
-        <a className="social-link github" href="https://github.com/your-profile" target="_blank" rel="noopener noreferrer">
+        <a className="social-link github" href="https://github.com/dluna2" target="_blank" rel="noopener noreferrer">
           <img src={gitHubIcon} alt="GitHub" />
         </a>
       </div>
