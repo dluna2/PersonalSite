@@ -77,7 +77,8 @@ export default function YunaM3LogoAnimated({ style, className }) {
       }, totalDelay)
     );
 
-    totalDelay += 150; // small pause after fill
+    // Pause 150 ms after each fill, except the last one pauses for 5 s
+    totalDelay += i === paths.length - 1 ? 5000 : 150;
   });
 
   // Briefly clear everything, then bump cycle to restart the schedule
@@ -92,7 +93,7 @@ export default function YunaM3LogoAnimated({ style, className }) {
   timeouts.push(
     setTimeout(() => {
       setCycle(c => c + 1);
-    }, totalDelay + 120) // tiny gap so the blank frame is visible
+    }, totalDelay) // tiny gap so the blank frame is visible
   );
 
   return () => timeouts.forEach(clearTimeout);
