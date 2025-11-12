@@ -1,0 +1,125 @@
+.footer-main {
+  width: 1440px;
+  max-width: 100vw;
+  height: 200px;
+  background: #594338;
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0 3rem;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+  bottom: 0;
+}
+
+.footer-connect-title {
+  align-self: flex-start;
+  font-size: 2.25rem;
+  font-weight: 400;
+  margin-top: 40px;
+  margin-bottom: 8px;
+  margin-right: 80px;
+  max-width: 320px;
+  white-space: nowrap;
+}
+
+.footer-social-vertical {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 28px;
+  height: 100%;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.footer-icon-link {
+  display: flex;
+  align-items: center;
+  height: 48px;
+  overflow: hidden;
+}
+.footer-icon {
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+  transition: filter 0.15s, box-shadow 0.17s, transform 0.15s;
+  border-radius: 8px;
+  background: transparent;
+  box-shadow: none;
+}
+/* Jiggle animation (reuse your social icon CSS if any, example below) */
+.jiggle {
+  transition: transform 0.17s;
+}
+.jiggle:hover {
+  animation: jiggle-footer 0.5s;
+}
+@keyframes jiggle-footer {
+  0% { transform: rotate(-8deg) scale(0.96); }
+  25% { transform: rotate(8deg) scale(1.12); }
+  50% { transform: rotate(-4deg) scale(0.95); }
+  75% { transform: rotate(4deg) scale(1.05); }
+  100% { transform: none; }
+}
+.footer-icon-link.facebook:hover img {
+  filter: invert(29%) sepia(81%) saturate(2148%) hue-rotate(193deg) brightness(95%) contrast(104%) !important;
+}
+.footer-icon-link.linkedin:hover img {
+  filter: invert(29%) sepia(81%) saturate(2148%) hue-rotate(193deg) brightness(95%) contrast(104%) !important;
+}
+.footer-icon-link.instagram:hover img {
+  filter: invert(32%) sepia(86%) saturate(1117%) hue-rotate(300deg) brightness(85%) contrast(106%) !important;
+}
+.footer-icon-link.github:hover img {
+  filter: invert(32%) sepia(77%) saturate(3785%) hue-rotate(253deg) brightness(93%) contrast(97%) !important;
+}
+.footer-item-text {
+  line-height: 1.28;
+  font-size: 1.14rem;
+}
+.footer-copyright {
+  position: absolute;
+  left: 50%;
+  bottom: 16px;
+  transform: translateX(-50%);
+  font-size: 2.1rem;
+  color: #fff;
+  font-weight: 300;
+  white-space: nowrap;
+  pointer-events: none;
+}
+@media (max-width: 1200px) {
+  .footer-main {
+    width: 98vw;
+    padding: 0 1rem;
+  }
+  .footer-connect-title {
+    font-size: 1.4rem;
+    margin-right: 18px;
+  }
+  .footer-social-vertical {
+    gap: 15px;
+    margin-top: 22px;
+  }
+  .footer-icon, .footer-icon-link {
+    width: 32px;
+    height: 32px;
+  }
+  .footer-copyright {
+    font-size: 1.2rem;
+  }
+}
+
+/* App wrapper/layout recommendation - add in App.css/main layout file if not present */
+.app-root, #root, body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.footer-main {
+  flex-shrink: 0;
+}

@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './Navbar';
+import Footer from './Footer';
 import proPic from './assets/images/proPic.jpg';
 import facebookIcon from './assets/images/facebookIcon.svg';
 import instagramIcon from './assets/images/instagramIcon.svg';
@@ -50,6 +51,7 @@ function App() {
         <Route path="/photography" element={<></>} />
         <Route path="/blog" element={<></>} />
       </Routes>
+      <Footer />
     </Router>
   );
 }

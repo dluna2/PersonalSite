@@ -1,5 +1,16 @@
-.App {
-  text-align: center;
+#root, body, html {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.App, .app-root {
+  flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+/* fix for main content wrapper */
+main, .main-content {
+  flex: 1 0 auto;
 }
 
 .App-logo {
