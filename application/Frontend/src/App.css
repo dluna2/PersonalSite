@@ -146,7 +146,7 @@
 }
 @media (max-width: 700px) {
   .home-container {
-    flex-direction: column;
+    flex-direction: column-reverse;
     justify-content: flex-start;
     align-items: stretch;
     padding: 1.5rem 1rem 2.2rem 1rem;
@@ -173,8 +173,8 @@
     justify-content: flex-start;
   }
   .home-profile-pic {
-    height: 120px;
-    width: 120px;
+    height: 200px;
+    width: 200px;
     align-self: center;
     margin-bottom: 1.6rem;
   }

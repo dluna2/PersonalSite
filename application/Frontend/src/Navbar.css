@@ -57,7 +57,7 @@
   border-radius: 4px;
   display: inline-block;
   background: none;
-  color: #fff;
+  color: #000;
 }
 
 .navbar-lang-list {
@@ -82,8 +82,14 @@
 .navbar-lang-list a {
   display: block;
   padding: 8px 14px;
-  color: #232323;
+  color: #000;
   text-decoration: none;
+}
+
+.navbar-lang-list a.active,
+.navbar-lang-list a.selected {
+  color: #ffb116;
+  font-weight: bold;
 }
 
 .navbar-lang-list a:hover {
