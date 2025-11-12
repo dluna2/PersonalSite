@@ -3,7 +3,6 @@
   align-items: center;
   justify-content: space-between;
   padding: 0.7rem 2rem 0.7rem 2.5rem;
-  background: #00000000;
   font-family: 'Inter', sans-serif;
   font-weight: 400;
 }
@@ -93,7 +92,6 @@
 }
 
 .navbar-lang-list a:hover {
-  background: #f3f3f3;
   color: #b09a75;
 }
 

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import YunaM3LogoAnimated from './assets/images/由奈m3LogoAnimated';
+import YunaM3LogoAboutAnimation from './assets/images/由奈m3 LogoAboutAnimation';
 import './Navbar.css';
 import { useTranslation } from 'react-i18next';
 
@@ -20,7 +21,9 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <Link to="/" className="navbar-logo" onClick={closeMenu}>
-        <YunaM3LogoAnimated className="navbar-logo-img" />
+        {location.pathname === '/about'
+          ? <YunaM3LogoAboutAnimation className="navbar-logo-img" />
+          : <YunaM3LogoAnimated className="navbar-logo-img" />}
       </Link>
       <button className="navbar-hamburger" aria-label="Open navigation" onClick={toggleMenu}>
         <span className="hamburger-bar"></span>

@@ -8,6 +8,7 @@ import linkedInIcon from './assets/images/linkedInIcon.svg';
 import gitHubIcon from './assets/images/gitHubIcon.svg';
 import './App.css';
 import { useTranslation } from 'react-i18next';
+import About from './about';
 
 // Home page with proPic and user info+icons
 const Home = () => {
@@ -44,7 +45,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/about" element={<></>} />
+        <Route path="/about" element={<About />} />
         <Route path="/experience" element={<></>} />
         <Route path="/photography" element={<></>} />
         <Route path="/blog" element={<></>} />
